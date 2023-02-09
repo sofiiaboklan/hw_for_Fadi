@@ -1,1 +1,1 @@
-asdad
+print("zhopa")
