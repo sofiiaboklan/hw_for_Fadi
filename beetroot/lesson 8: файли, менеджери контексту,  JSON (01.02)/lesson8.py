@@ -6,7 +6,6 @@ print("THEORY ?\n")
 # ЩЕ Є ФАЙЛИ CARL, OPEN_CARL, CJ, HELLO_AGAIN,USER_INFO, WEEKDAYS
 
 """
-
 with open('weekdays.txt') as week_file:
     weekdays = [day.rstrip() for day in week_file.readlines()]
 print(weekdays)
