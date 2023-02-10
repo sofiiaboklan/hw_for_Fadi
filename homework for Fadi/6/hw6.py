@@ -5,18 +5,23 @@ the name of your favorite movie. The function should then print “My favorite m
 """
 print("\nTASK ONE: version one.\n")
 
+
 def favorite_movie():
     movie_name = input("What is your favorite movie?: ")
     print(f"My favourite movie is {movie_name}.")
 
+
 favorite_movie()
 
 # OR
+
 print("\nTASK ONE: version two.\n")
+
 
 def favorite_movie_1():
     movie_name = "Baby Driver"
     print(f"My favourite movie is {movie_name}.")
+
 
 favorite_movie_1()
 
@@ -29,6 +34,7 @@ Make the function print out the values of the dictionary to make sure that it wo
 
 print("\nTASK TWO\n")
 
+
 def make_country():
     country_name = "Ukraine, Italy, Poland"
     country_capital = "Kyiv, Rome, Warsaw"
@@ -37,6 +43,7 @@ def make_country():
     output_dict = dict(zip(keys, values))
     print(output_dict)
     print(output_dict.values())
+
 
 make_country()
 
@@ -52,21 +59,27 @@ the call make_operation(‘-’, 5, 5, -10, -20) should return 30
 the call make_operation(‘*’, 7, 6) should return 42  
 """
 
-print("\nTASK TWO\n")
+print("\nTASK THREE\n")
 
 import operator
 
-d = {
-    '+': operator.add,
-    '-': operator.sub,
-    '*': operator.mul,
-    '/': operator.truediv,
-    }
 
-def make_operation(*numbers):
-    for num in numbers:
-        total = d
-    return total
-    print(total)
+def make_function(operator, number1, *numbers):
+    if operator == '+':
+        result = number1
+        for key in numbers:
+            result += key
+        return result
+    elif operator == '-':
+        result = number1
+        for key in numbers:
+            result -= key
+        return result
+    else:
+        result = number1
+        for key in numbers:
+            result *= key
+        return result
 
-make_operation()
+
+print(make_function('+', 100, 1, 125))
