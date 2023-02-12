@@ -18,6 +18,9 @@ Application should load JSON data, if it is present in the folder with applicati
 else raise an error. After the user exits, all data should be saved to loaded JSON.
 """
 
+print("\nTASK TWO")
+
+
 import json
 
 
