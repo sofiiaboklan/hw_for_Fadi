@@ -20,6 +20,7 @@ else raise an error. After the user exits, all data should be saved to loaded JS
 
 import json
 
+
 def phonebook_application(name_of_phonebook):
     try:
         with open("user_info.py") as f:
@@ -117,5 +118,6 @@ def phonebook_application(name_of_phonebook):
 
         else:
             print("Please put in a valid option.")
+
 
 phonebook_application("phonebook")
