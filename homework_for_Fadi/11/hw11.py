@@ -51,6 +51,8 @@ y = func()
 
 print("The value of (a * b - 10) is", y(10))
 
+# OR
+
 print("\nTASK TWO: VERSION TWO\n")
 
 
