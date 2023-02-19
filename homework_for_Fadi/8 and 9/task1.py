@@ -19,7 +19,7 @@ with open('myfile.txt', 'r') as file_object:
 # 1) Yes, the new file showed up in the directory where I ran my scripts
 # 2) I can do it by writing out the whole path like this:
 
-# path = '/Users/macbookair/PycharmProjects/pythonProject1/homework for Fadi/random_dir/myfile.txt'
+# path = '/Users/macbookair/PycharmProjects/pythonProject1/homework for Fadi/random_dir'
 # with open(path, 'w') as file_object:
 #    file_object.write("Hello file world!")
 
