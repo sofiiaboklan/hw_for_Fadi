@@ -21,7 +21,7 @@ class Person:
 
 
 if __name__ == "__main__":
-    sofiia = Person("Sofiia", "Boklan", "20")
+    sofiia = Person("Sofiia", "Boklan", 20)
     sofiia.talk()
 
 """
