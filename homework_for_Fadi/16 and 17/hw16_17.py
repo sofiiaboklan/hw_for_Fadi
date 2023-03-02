@@ -188,6 +188,7 @@ class Fraction:
     # 3/6 + 2/6 = 5/6
 
     # 1/2 + 1 =
+    #
     # 1 -> Fraction(1, 1)
 
     def calc_nsk(self, other):
