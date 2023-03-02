@@ -37,7 +37,6 @@ dog = Dog()
 animals_say_hello(cat)
 animals_say_hello(dog)
 
-
 """
 Task 2: Library
 
@@ -154,7 +153,6 @@ print(library.group_by_year(2002))
 
 print(book4.amount_of_books)
 
-
 """
 Task 3: Fraction
 
@@ -253,7 +251,6 @@ fraction1 = Fraction(1, 3)
 fraction2 = Fraction(1, 4)
 result = fraction1 / 5
 print(str(result.x) + " / " + str(result.y))
-
 
 if __name__ == "__main__":
     x = Fraction(1, 2)
