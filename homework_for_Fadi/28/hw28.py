@@ -3,6 +3,7 @@ Task 1
 Robots.txt
 Download and save to file robots.txt from wikipedia, twitter websites etc.
 """
+import json
 
 print("\nTASK ONE\n")
 
@@ -10,9 +11,9 @@ import requests
 
 url = "https://www.w3schools.com/python/python_file_write.asp"
 resp = requests.get(url)
-f = open("robots.txt", "w")
-f.write(str(resp.content))
-f.close()
+
+with open("robots.txt", "w") as f:
+    json.dump(str(resp.content), f, indent=2)
 
 """
 Task 2
@@ -23,24 +24,24 @@ As a result, store all comments in chronological order in JSON and dump it to a 
 
 print("\nTASK TWO\n")
 
+import requests
+
 
 base_url = "https://api.pushshift.io/reddit/comment/search/"
 
 
 def get_data(url, params):
-    r = requests.get(base_url, params=params)
-
+    r = requests.get(url, params=params)
     return r.json()
 
 
-data = get_data(base_url, {"subreddit": "cars"})
+params = {"subreddit": "cars"}
+data = get_data(base_url, params)
 data["data"].reverse()
-# for comment in data["data"]:
-#     print(comment["utc_datetime_str"])
 
-f = open("subreddit.txt", "w")
-f.write(str(data))
-f.close()
+with open("subreddit.txt", "w") as f:
+    json.dump(data, f, indent=2)
+
 
 """
 Task 3
@@ -50,8 +51,6 @@ your choice. For the current task, you can choose any weather API or website or 
 """
 
 print("\nTASK THREE\n")
-
-import json
 
 
 def get_weather(city):
